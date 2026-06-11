@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147667934867",
+    "project_id": "skinscan-tugas",
+    "storage_bucket": "skinscan-tugas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147667934867:android:450b393f36249882ebb766",
+        "android_client_info": {
+          "package_name": "com.skinscan.skinscan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmRgmpwsicPJp3t3LOlghMZH-EzA-dq1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
