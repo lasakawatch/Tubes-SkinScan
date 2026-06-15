@@ -9,7 +9,8 @@ class ChatbotService {
   static const String _endpoint = 'https://models.inference.ai.azure.com';
   static const String _model = 'gpt-4o-mini';
   // TOKEN DIHAPUS UNTUK SEMENTARA KARENA GITHUB MEMBLOKIR UPLOAD JIKA ADA TOKEN ASLI
-  static const String _token = 'YOUR_GITHUB_PAT_HERE';
+  // (DIKEMBALIKAN KE LOKAL AGAR PRESENTASI BISA BERJALAN)
+  static const String _token = 'TAMBAHKAN_TOKEN_DISINI';
 
   static const String _systemPrompt = '''
 Kamu adalah asisten edukasi dermatologi bernama "SkinBot" dalam aplikasi SkinScan.

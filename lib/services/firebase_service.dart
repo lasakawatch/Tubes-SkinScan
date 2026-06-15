@@ -163,6 +163,8 @@ class FirebaseService {
   static Future<bool> updateUserProfile({
     String? fullName,
     String? phone,
+    String? photoUrl,
+    String? photoBase64,
   }) async {
     try {
       final uid = currentUser?.uid;
@@ -173,6 +175,8 @@ class FirebaseService {
       };
       if (fullName != null) updates['fullName'] = fullName;
       if (phone != null) updates['phone'] = phone;
+      if (photoUrl != null) updates['photoUrl'] = photoUrl;
+      if (photoBase64 != null) updates['photoBase64'] = photoBase64;
 
       await _firestore.collection('users').doc(uid).update(updates);
       return true;

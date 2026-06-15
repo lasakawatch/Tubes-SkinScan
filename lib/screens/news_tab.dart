@@ -66,7 +66,7 @@ final List<Map<String, dynamic>> _articles = [
     'color': Color(0xFFF57C00),
     'tag': 'Pencegahan',
     'readTime': '4 min',
-    'url': 'https://www.halodoc.com/artikel/ini-alasan-pentingnya-menggunakan-sunscreen-setiap-hari',
+    'url': 'https://www.halodoc.com/artikel/5-tips-melindungi-diri-dari-sinar-uv-saat-mudik?srsltid=AfmBOoqXhFcSc0EfMUUfOA-23YT5hkEaz4tp4DF3zWvsLJmYEtczHrb7',
     'content': 'Paparan sinar UV berlebihan menyebabkan kerusakan DNA pada sel kulit. Gunakan sunscreen SPF 30+ setiap hari, hindari matahari pukul 10-16, dan kenakan pakaian pelindung. Aplikasikan ulang sunscreen setiap 2 jam saat beraktivitas di luar ruangan.',
   },
   {
@@ -86,7 +86,7 @@ final List<Map<String, dynamic>> _articles = [
     'color': Color(0xFF2196F3),
     'tag': 'Perawatan',
     'readTime': '3 min',
-    'url': 'https://www.alodokter.com/dermatitis-atopik',
+    'url': 'https://www.alodokter.com/eksim-atopik',
     'content': 'Kulit eksim disebabkan oleh penghalang kulit (skin barrier) yang lemah. Gunakan pelembap tebal langsung setelah mandi, pilih produk bebas parfum (fragrance-free), dan hindari mandi dengan air terlalu panas karena dapat menghilangkan minyak alami kulit.',
   },
   {
@@ -96,7 +96,7 @@ final List<Map<String, dynamic>> _articles = [
     'color': Color(0xFFFF9800),
     'tag': 'Edukasi',
     'readTime': '4 min',
-    'url': 'https://www.halodoc.com/artikel/waspada-berbagai-infeksi-jamur-kulit-ini',
+    'url': 'https://www.halodoc.com/kesehatan/jamur-kulit?srsltid=AfmBOopteZYfgjWznyERQUSCNo52gm_lbqXJe6obkz-O_D-Y2lkgzZSv',
     'content': 'Kurap (ringworm), panu, dan kandidiasis sangat mudah berkembang di lingkungan lembap. Jaga kulit tetap kering, pakai pakaian berbahan katun yang menyerap keringat, dan segera ganti baju setelah berolahraga untuk mencegah jamur berkembang biak.',
   },
 ];
