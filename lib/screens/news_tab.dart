@@ -26,7 +26,7 @@ class NewsTab extends StatelessWidget {
             icon: Icons.monitor_heart_rounded,
             color: const Color(0xFFD32F2F),
             readTime: '3 min baca',
-            url: 'https://www.alodokter.com/kenali-ciri-ciri-kanker-kulit-melanoma-dari-tahi-lalat',
+            url: 'https://www.halodoc.com/artikel/abcde-melanoma-kenali-tanda-awal-kanker-kulit?srsltid=AfmBOopCF72bwTsjQmbQHRXef6ams-9Y-JwvISJfsR_zZeqWZZdR6REx',
             content: 'Metode ABCDE adalah panduan sederhana untuk mengenali tanda-tanda awal melanoma:\n\n'
                 '🔴 A - Asimetri: Bentuk tahi lalat tidak simetris\n'
                 '🔴 B - Border: Tepi tidak rata atau tidak jelas\n'

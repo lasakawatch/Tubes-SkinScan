@@ -26,48 +26,62 @@ class DiseaseDetailScreen extends StatelessWidget {
             pinned: true,
             backgroundColor: color,
             flexibleSpace: FlexibleSpaceBar(
-              background: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [color, color.withValues(alpha: 0.7)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
+              background: Stack(
+                fit: StackFit.expand,
+                children: [
+                  if (disease['imageUrl'] != null)
+                    Image.network(
+                      disease['imageUrl'] as String,
+                      fit: BoxFit.cover,
+                      errorBuilder: (_, __, ___) => const SizedBox(),
+                    ),
+                  Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          color.withValues(alpha: 0.6),
+                          color.withValues(alpha: 0.95),
+                        ],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 80, 20, 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(14),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Icon(disease['icon'] as IconData, color: Colors.white, size: 32),
+                          ),
+                          const SizedBox(height: 12),
+                          Text(
+                            disease['name'] as String,
+                            style: GoogleFonts.poppins(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
+                          const SizedBox(height: 6),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              'Tingkat Risiko: $severity',
+                              style: GoogleFonts.poppins(fontSize: 12, color: Colors.white, fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 80, 20, 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(14),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        child: Icon(disease['icon'] as IconData, color: Colors.white, size: 32),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        disease['name'] as String,
-                        style: GoogleFonts.poppins(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
-                      ),
-                      const SizedBox(height: 6),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Text(
-                          'Tingkat Risiko: $severity',
-                          style: GoogleFonts.poppins(fontSize: 12, color: Colors.white, fontWeight: FontWeight.w500),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                ],
               ),
             ),
           ),
